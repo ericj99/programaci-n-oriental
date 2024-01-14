@@ -1,0 +1,39 @@
+import java.util.Scanner;
+//Main
+public class Main {
+    public static void main(String[] args) {
+        int numEnt;
+        double numDec, res1, res2, res3, res4,res5,res6;
+
+        //Es la creacion de un objeto Scanner para leer los datos que ingrese el usuario
+        Scanner leer = new Scanner(System.in);
+        System.out.printf("\nBienvenido");
+        //Entrada de Numeros enteros y decimales
+        System.out.printf("\nEscribe un nuero entero ");
+        numEnt = leer.nextInt();
+        System.out.printf("\nEscribe un numero decimal");
+        numDec = leer.nextDouble();
+
+        //Calcula los datos ingresados por el usuario
+        //Operación 1:está sumando el valor contenido en la variable numDec al valor contenido en la variable numEnt
+        res1 = numDec + numEnt;
+        //Operación 2:está dividiendo el valor contenido en la variable numEnt por el valor de numDec convertido a un número entero
+        res2 = numEnt / (int)numDec;
+        //Operación 3:está dividiendo el valor contenido en la variable numEnt por el valor de numDec
+        res3 = numEnt / numDec;
+        //Operación 4:está dividiendo el valor contenido en la variable numDec por el valor de numEnt, y el resultado se guarda en la variable res4
+        res4 = numDec / numEnt;
+        //Operación 5:está dividiendo la parte entera de numDec (ignorando la parte decimal) por el valor de numEnt
+        res5 = (int)numDec / numEnt;
+        //Operación 6:está sumando la parte entera de numDec (ignorando la parte decimal) al valor de numEnt.
+        res6 = (int)numDec + numEnt;
+
+        //Impresion
+        System.out.printf("\nEl resultado de la operacion es: " + res1);
+        System.out.printf("\nEl resultado de la operacion es: " + res2);
+        System.out.printf("\nEl resultado de la operacion es: " + res3);
+        System.out.printf("\nEl resultado de la operacion es: " + res4);
+        System.out.printf("\nEl resultado de la operacion es: " + res5);
+        System.out.printf("\nEl resultado de la operacion es: " + res6);
+    }
+}
